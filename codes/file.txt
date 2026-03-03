@@ -1,1 +1,1 @@
-
+this folder contains the .vhd files for the ARTIX-100T fpga to be used using vivdado,preferably 2019 version.
