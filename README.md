@@ -1,28 +1,32 @@
 # FPGA Basics
 
-This repository contains beginner FPGA learning material and a practical temperature-measurement project for the **Nexys A7-100T (Artix-7)** board using the onboard **ADT7420** temperature sensor.
+This repository provides introductory learning material for FPGA development, along with a practical temperature measurement project implemented on the **Nexys A7-100T (Artix-7)** development board. The project utilizes the onboard **ADT7420** temperature sensor.
 
 ## Repository Structure
 
-### 1) `temperature_with_7segment/`
-Files for the temperature-measurement project:
-- ADT7420 sensor interface (I2C)
-- I2C master logic
-- Clock divider
-- Temperature processing
-- UART transmitter
-- Top-level integration module
+### 1. `temperature_with_7segment/`
 
-This folder is focused on reading temperature data from ADT7420 and displaying/processing it on FPGA.
+This directory contains the complete implementation of the temperature measurement system, including:
 
-### 2) `codes/`
-Basic starter FPGA/VHDL examples:
-- Full adder implementations
-- Clock usage example
-- 7-segment + switch example
+- ADT7420 temperature sensor interface (I²C protocol)  
+- I²C master controller  
+- Clock divider module  
+- Temperature data processing logic  
+- UART transmission module  
+- Top-level integration module  
 
-## Other Files
+The primary objective of this module is to read temperature data from the ADT7420 sensor and display the processed output on the onboard seven-segment display.
 
-- `Nexys-A7-100T-Master.xdc` – official board constraints file
-- `David_Harris_Sarah_Harris-Digital_Design_and_Computer_Architecture-EN.pdf` – study reference
-- `pdfcoffee.com_principles-and-structures-of-fpgas-4-pdf-free.pdf` – study reference
+### 2. `codes/`
+
+This directory includes foundational FPGA/VHDL examples for learning and reference purposes:
+
+- Full adder implementation.  
+- Clock utilization example.
+- Seven-segment display interfacing with switches(Binary to hexadecimal) .
+
+## Additional Resources
+
+- `Nexys-A7-100T-Master.xdc` — Official constraints file for the Nexys A7-100T board  
+- *Digital Design and Computer Architecture* by David Harris and Sarah Harris — Reference textbook  
+- *Principles and Structures of FPGAs* — Supplementary reference material  
